@@ -22,7 +22,7 @@ npm run dev
 
 
 ## Live Demo
-Add your deployed link here
+react-task-psi-ruddy.vercel.app
 
 ## GitHub Repository
 https://github.com/Mohamed-Fayaas/React-task.git
