@@ -12,6 +12,9 @@ import OffersModal from './components/OffersModal';
 import ContactDrawer from './components/ContactDrawer';
 import PagesModals from './components/PagesModals';
 
+// Hero Banner Component
+import HeroBanner from './components/HeroBanner';
+
 import { products, categories } from './data/products';
 import { ShoppingBag } from 'lucide-react';
 
@@ -185,6 +188,12 @@ function App() {
 
         {/* Product Cards Grid section */}
         <main className="products-layout-wrapper">
+          {/* Beautiful Hero Banner section integrated seamlessly */}
+          <HeroBanner
+            activeShopType={activeShopType}
+            onPromoAction={() => setIsOffersOpen(true)}
+          />
+
           {filteredProducts.length === 0 ? (
             <div className="empty-products">
               <svg
